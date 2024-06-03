@@ -1,5 +1,13 @@
 <h1>Proyecto Academy Always Music2</h1>  
-
+<br>
+<p>En este desafío se pide mejorar la base de datos music. Los requerimientos son:</p>
+<br>
+<ol>
+  <li>Hacer todas las consultas con un Objeto como argumento del método query.</li>
+  <li>Hacer las consultas con texto parametrizado.</li>
+  <li>Capturar los posibles errores en todas las consultas e imprimirlos por consola.</li>
+  <li>Obtener el registro de los estudiantes registrados en formato de arreglos.</li>
+</ol>
 
 <h2>Pasos a realizar para ejecutar la base de datos:</h1>
 
