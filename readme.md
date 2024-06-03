@@ -33,7 +33,7 @@
 </ul>
 
 <br>
-<h3>3-Consultar el registro de todos los estudiantes registrados de la base de datos:</h3>
+<h3>3-Consultar el registro de todos los estudiantes registrados de la base de datos: en formao de ARREGLOS</h3>
 <p>node server.js consulta</p>
 <ul>
 <li>Traerá  como resultado: </li>
