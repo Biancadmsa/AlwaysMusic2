@@ -65,7 +65,7 @@ const getAlumno = async () => {
     };
     const res = await pool.query(query);
     if (res.rows.length > 0) {
-      // Mostrar los registros en formato de arreglo
+      // Mostrar los registros en formato de ARREGLOS
       console.log("Alumnos registrados:", res.rows);
     } else {
       console.log("No hay alumnos registrados en la base de datos.");
