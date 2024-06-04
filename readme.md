@@ -1,53 +1,58 @@
-<h1>Proyecto Academy Always Music2</h1>  
-<br>
-<p>En este desafío se pide mejorar la base de datos music. Los requerimientos son:</p>
-<br>
-<ol>
-  <li>Hacer todas las consultas con un Objeto como argumento del método query.</li>
-  <li>Hacer las consultas con texto parametrizado.</li>
-  <li>Capturar los posibles errores en todas las consultas e imprimirlos por consola.</li>
-  <li>Obtener el registro de los estudiantes registrados en formato de arreglos.</li>
-</ol>
+#  Proyecto Academy Always Music2
 
-<h2>Pasos a realizar para ejecutar la base de datos:</h1>
 
-<p>Instalar npm i pg </p>
+## En este desafío se pide mejorar la base de datos music. Los requerimientos son:
 
-<p><strong>***Pasos de registro en la base de datos:***</strong></p>
+```
+1-Hacer todas las consultas con un Objeto como argumento del método query.
+2-Hacer las consultas con texto parametrizado
+3-Capturar los posibles errores en todas las consultas e imprimirlos por consola.
+4-Obtener el registro de los estudiantes registrados en formato de arreglos.
 
-<h3>1-Registrar un nuevo estudiante:</h3>
-<ul>
-<li>node server.js registrar 12345678-9 "Juan Perez" G70 7  ( ya se encuentra agregado, intentar con el siguiente.) </li>
-<li>node server.js registrar 12345678-4 "Bianca Salcedo" G70 7</li>
-<li>node server.js registrar 12345678-5 "Eduardo Ramos" G70 7</li>
-<li>node server.js registrar 12345678-6 "Ignacio Dubo" G70 7</li>
-<li>node server.js registrar 12345678-7 "Diego Cabre" G70 7</li>
-</ul>
-<p>Traerá como resultado por ejemplo un alumno que sea registrado:</p>
-<ul>
-<li>***** Academy Always Music *****</li>
-<li>Alumno Juan Perez: 12345678-9 fué registrado con éxito!</li>
-<li>Alumno Registrado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 7 } </li>
-</ul>
+```
 
-<br>
+### Pasos a realizar para ejecutar la base de datos:
 
-<h3>2-Obtener el registro de un estudiante:</h3>
-<p>node server.js rut 12345678-4</p>
-<ul>
-<li>Traerá  como resultado: </li>
-<li>***** Academy Always Music *****</li>
-<li>Alumno consultado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 7 }</li>
-</ul>
+Instalar npm i pg 
 
-<br>
+### ***Pasos de registro en la base de datos:***
 
-<h3>3-Consultar el registro de todos los estudiantes registrados de la base de datos: en formao de ARREGLOS</h3>
-<p>node server.js consulta</p>
-<ul>
-<li>Traerá  como resultado: </li>
-<li>***** Academy Always Music *****</li>
-<li>Alumnos registrados: [
+## 1-Registrar un nuevo estudiante:
+
+```
+node server.js registrar 12345678-9 "Juan Perez" G70 7  (ya se encuentra agregado, intentar con el siguiente.) 
+node server.js registrar 12345678-4 "Bianca Salcedo" G70 7
+node server.js registrar 12345678-5 "Eduardo Ramos" G70 7
+node server.js registrar 12345678-6 "Ignacio Dubo" G70 7
+node server.js registrar 12345678-7 "Diego Cabre" G70 7
+
+```
+### Traerá como resultado por ejemplo un alumno que sea registrado:
+
+```
+***** Academy Always Music *****
+Alumno Juan Perez: 12345678-9 fué registrado con éxito!
+Alumno Registrado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 7 }
+
+```
+
+## 2-Obtener el registro de un estudiante:
+
+```
+node server.js rut 12345678-4
+Traerá  como resultado: 
+***** Academy Always Music *****
+Alumno consultado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 7 }
+
+```
+
+## 3-Consultar el registro de todos los estudiantes registrados de la base de datos: en formao de ARREGLOS
+
+```
+node server.js consulta
+Traerá  como resultado: 
+***** Academy Always Music *****
+Alumnos registrados: [
   { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 7 },
   {
     rut: '12345678-4',
@@ -55,26 +60,29 @@
     curso: 'G70',
     nivel: 7
   }
-]</li>
-</ul>
-<br>
+]
 
-<h3>4-Actualizar el registro de un estudiante de la base de datos:</h3>
-<p>node server.js actualizar 12345678-9 "Juan Perez" g70 8</p>
-<ul>
-<li>Traerá  como resultado: </li>
-<li>***** Academy Always Music *****</li>
-<li>Alumno con rut 12345678-9 actualizado con éxito</li>
-<li>Alumno Actualizado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'g70', nivel: 8 }</li>
-</ul>
-<br>
+```
 
-<h3>5-Eliminar el registro de un estudiante de la base de datos:</h3>
+## 4-Actualizar el registro de un estudiante de la base de datos:
 
-<p>node server.js eliminar 12345678-9</p>
-<ul>
-<li>Traerá como resultado aqui un ejemplo de como se vería:</li>
-<li>***** Academy Always Music *****</li>
-<li>Alumno con rut 12345678-4 eliminado con éxito</li>
-<li>Alumno Eliminado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 8 }</li>
-</ul>
+```
+node server.js actualizar 12345678-9 "Juan Perez" g70 8
+Traerá  como resultado: 
+***** Academy Always Music *****
+Alumno con rut 12345678-9 actualizado con éxito
+Alumno Actualizado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'g70', nivel: 8 }
+
+```
+
+## 5-Eliminar el registro de un estudiante de la base de datos:
+
+```
+node server.js eliminar 12345678-9
+Traerá como resultado aqui un ejemplo de como se vería:
+***** Academy Always Music *****
+Alumno con rut 12345678-4 eliminado con éxito
+Alumno Eliminado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 8 }
+
+```
+
