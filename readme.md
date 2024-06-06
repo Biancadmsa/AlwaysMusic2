@@ -39,7 +39,7 @@ Alumno Registrado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', niv
 ## 2-Obtener el registro de un estudiante:
 
 ```
-node server.js rut 12345678-4
+node server.js rut 12345678-9
 Traerá  como resultado: 
 ***** Academy Always Music *****
 Alumno consultado:  { rut: '12345678-9', nombre: 'Juan Perez', curso: 'G70', nivel: 7 }
